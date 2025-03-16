@@ -1,0 +1,15 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.bulb{
+    height:35px;
+    width: 35px;
+    background: yellow;
+    border-radius: 40px;
+}
+.bulb-stop{
+    height:35px;
+    width: 35px;
+}
