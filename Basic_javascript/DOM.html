@@ -1,0 +1,25 @@
+<!-- Children of an element -->
+<!-- Descentdant nodes are the elements which are inside the upper elements 
+e.g. title, body, div, p, span.-->
+<html>
+    <head>
+        <title>Accessing children in DOM</title>
+    </head>
+
+
+<body>
+    <div>
+        <p>
+            paragraph tag is the children of div tag here.
+        </p>
+        <span> This is sibling of p-tag</span>
+    </div>
+</body>
+<!-- Accessing first child, last child and child nodes -->
+<script>
+    console.log(document.body.firstChild); //This will return as text node in console as after body tag there is a space which is considered s text node 
+    console.log(document.body.lastChild); //Returns script as clast child
+    console.log(document.childNodes); //Returns list of child nodes
+</script>
+
+</html> 

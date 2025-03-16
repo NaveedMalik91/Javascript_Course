@@ -1,0 +1,24 @@
+html,body{
+   height: 100%;
+   width: 100%; 
+}
+.red{
+    background-color: red;
+    color: white;
+}
+.text-dark{
+        color: black;
+}
+
+.font{
+    font-size: 20px;
+    font-style: italic;
+} 
+.text{
+    text-align: center;
+}
+
+.bg-dark{
+    background-color: rgb(29, 163, 145);
+    color: rgb(126, 78, 78);
+}
