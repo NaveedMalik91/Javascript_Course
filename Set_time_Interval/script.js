@@ -2,6 +2,10 @@
 setTimeout(function() {
     alert("Hello");
 }, 3000);
+//another way to write the above code
+setTimeout(() =>{
+    alert("Hello");
+}, 3000);
 
 
 const myfunc = (a,b,c)=>{
