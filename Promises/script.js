@@ -31,3 +31,7 @@ promise1
 
 console.log("State of promise 1: ", promise1); //State of promise:  Promise {<resolved>: "Success"}
 
+//Using arrow function
+promise1
+    .then(result => console.log(result))  // Success
+    .catch(error => console.log(error));  // Error
