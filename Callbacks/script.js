@@ -1,4 +1,4 @@
-//Synchronous programming: In this operations are performedone after the ither
+//Synchronous programming: In this operations are performedone after the other
 // console.log("this is line1");
 // console.log("this is line2");
 // console.log("this is line3");
@@ -43,6 +43,7 @@ function load(link, callback){
 function myCallback(error,link){
     if(error){
         alert("Error occurred while loading script: "+link);
+        return;
     }
     alert("script loaded successfully: "+link);
 }
