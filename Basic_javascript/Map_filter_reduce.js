@@ -34,5 +34,5 @@ console.log(new_arr);
 const multiply = (val1,val2)=>{ //function definition
     return val1 * val2;
 }
-let new_arr2 = arr.reduce(multiply); //declares function inside reduce
+let new_arr2 = arr.reduce(multiply); //declares function inside reduce, it takes two parameters
 console.log(new_arr2);

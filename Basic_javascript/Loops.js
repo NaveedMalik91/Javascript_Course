@@ -32,6 +32,10 @@
 //     console.log(key); //each character of string traversed and printed as key
 // }
 
+let arr = [1,2,3,4,5];
+for(let key of arr){
+    console.log(key);
+}
 
 
 

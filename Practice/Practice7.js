@@ -1,7 +1,15 @@
-document.getElementsByTagName("nav")[0].firstElementChild.firstElementChild.style.color = "red" //make first element of nav to green
-document.getElementsByTagName("nav")[0].firstElementChild.lastElementChild.style.color = "red" //make last element of nav to green
+// let ele = document.getElementsByClassName("list")[0];
+// ele.firstElementChild.style.color = "red";
+// ele.lastElementChild.style.color = "red";
 
-//change li tags background to cyan
+// let ele = document.querySelectorAll(".list")[0];
+// ele.firstElementChild.style.color = "red";
+// ele.lastElementChild.style.color = "red";
+
+document.getElementsByTagName("nav")[0].firstElementChild.firstElementChild.style.color = "red";
+document.getElementsByTagName("nav")[0].lastElementChild.lastElementChild.style.color = "red";
+
 Array.from(document.getElementsByTagName("li")).forEach(element => {
-    element.style.background = "cyan"
+    element.style.backgroundColor = "cyan";
 });
+

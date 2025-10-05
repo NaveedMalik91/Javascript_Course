@@ -12,6 +12,7 @@
 
 
 //CallbackFunction: A callback function is a function that is passed as an argument to another function, to be “called back” at a later time. 
+// callbacks let code run later without blocking, enabling asynchronous behavior.
 // function greet(name, callback){
 //     console.log("Hello, "+name);
 //     callback();
@@ -33,7 +34,7 @@ function load(link, callback){
 
     script.onerror = function(){ //callback error handling function
         console.log("Error in loading script "+link);
-        callback(new Error("Error occurred")); //error-> callback function executed with error
+        callback(new Error("Error occurred"),link); //error-> callback function executed with error
     }
 
     console.log("Adding script to the body");
@@ -48,4 +49,4 @@ function myCallback(error,link){
     alert("script loaded successfully: "+link);
 }
 
-load("https://code.jquery.com/jquery-3.6.0.min.js",myCallback);
+load("https://code.jquery.com/jquey-3.6.0.min.js",myCallback);

@@ -1,23 +1,26 @@
 //Multiple handlers can be added to the same promise using the then method.
-// let p1 = new Promise((resolve, reject) => {
-//     setTimeout(()=>{
-//         resolve('Promise resolved');
-//     })
-// });
+let p12 = new Promise((resolve, reject) => {
+    setTimeout(()=>{
+        resolve('Promise resolved');
+    })
+});
 
-// p1.then(()=>{
-//     let p = new Promise((resolve, reject) => {
-//         setTimeout(()=>{
-//             resolve(4);
-//         },2000)
-//     });
-//     return p;
-// })
+p12.then(()=>{
+    let p = new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            resolve(4);
+        },2000)
+    });
+    return p;
+})
 
 //After promise is resolved, then method is called and value is passed to the next promise
-// .then((value)=>{
-//     alert("After 2 seconds value from previous promise: "+value);
-// })
+.then((value)=>{
+    alert("After 2 seconds value from previous promise: "+value); //4
+})
+
+
+
 
 
 //Promise API: It is a set of methods that are used to handle promises.
@@ -39,7 +42,7 @@ let p4 = new Promise((resolve, reject) => {
     },3000)
 })
 
-// Promise.all: It waits for all promises to resolve and returns their results as an array. If any promise is rejected, it immediately rejects.
+// Promise.all: It waits for all promises to resolve and returns their results as an array. If any of the promises is rejected, it immediately rejects.
 // let promise_all = Promise.all([p2,p3,p4]);
 // promise_all.then((value)=>{
 //     console.log(value); //At the end of 3 seconds, all promises are resolved and their values are printed as an array.
@@ -69,7 +72,7 @@ let p4 = new Promise((resolve, reject) => {
 //promise.resolve: It returns a promise object that is resolved with a given value(int, str).
 let p = Promise.resolve("Resolved");
 p.then((value)=>{
-    console.log(value); //5
+    console.log(value); //Resolved
 })
 
 //promise.reject: It returns a promise object that is rejected with a given value(int, str).

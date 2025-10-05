@@ -1,6 +1,5 @@
 //we can perform operations on classes in HTML using JavaScript
 //we can add, remove, toggle, and replace classes in HTML using JavaScript
-let ele = document.getElementsByClassName("text-dark");
 
 let elements = document.getElementsByClassName("text-dark");
 

@@ -28,3 +28,4 @@ let res2 = func(1,2);
 let res3 = greet();
 console.log("The sum of two numbers give = ", res2);
 console.log(res3);
+

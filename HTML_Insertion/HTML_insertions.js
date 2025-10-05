@@ -4,10 +4,11 @@ a.innerHTML = a.innerHTML + "<h1> I am heading displayed along with div html </h
 
 //appendChild() method is used to insert the node as child nodes at the end of the element
 let div = document.createElement("div");
-div.innerHTML = "child of main div";
+div.innerHTML = "<div>child of main div</div>";
 a.appendChild(div);
 
-//append() method is used to insert the multiple nodes at the end of the element
+//append() method is used to insert the multiple nodes i.e.
+// it can take more than one argument nodes unlike appendchildthat takes only one argumentat the end of the element
 a.append(div);
 
 

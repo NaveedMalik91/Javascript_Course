@@ -18,7 +18,7 @@ btn.addEventListener("click",x); //bind function x to listener
 let inp = prompt("Enter number");
 if (inp == "2") {
     btn.removeEventListener("click",x);
-    alert("Eve5nt listener removed")
+    alert("Event listener removed")
 }
 
 

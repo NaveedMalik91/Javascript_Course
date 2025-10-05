@@ -80,7 +80,7 @@ values.forEach(element => {
     console.log(element*element);
 });
 
-//Array from: used to create an array from any other object.
+//Array.fromr(): used to create an array from any other object.
 let name = "Naveed";
 let arr1 = Array.from(name); //creates array of string name
 console.log(arr1);

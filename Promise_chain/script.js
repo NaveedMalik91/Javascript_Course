@@ -50,10 +50,10 @@ let p1 = load("https://code.jquery.com/jquery-3.6.0.min.js")
 
 p1.then((value) => {
     console.log("Jquery loaded successfully");
-    return load("https://cdn.jsdelivr.net/npm/vue/dist/vue.js");
+    return load("https://cdn.jsdelivr.net/npm/vue/dist/vue.js"); //return vue js link to next then block as input
 }).then(() => {
     console.log("Vue loaded successfully");
-    return load("https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js");
+    return load("https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"); //return React js link to next then block as input
 }).then(() => {
     console.log("React loaded successfully");
 })

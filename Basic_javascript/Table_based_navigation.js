@@ -9,5 +9,5 @@ console.log(a.tFoot) //will return footer of table seen on console
 console.log(a.tHead.firstElementChild) //will return table row
 console.log(a.tBodies) //whole body of table
 console.log(a.rows[0]) //will return table row
-console.log(a.rows[2].rowIndex) // first row index
+console.log(a.rows[2].rowIndex) // second row index
 

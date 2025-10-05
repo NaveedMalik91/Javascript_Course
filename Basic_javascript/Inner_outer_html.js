@@ -7,8 +7,8 @@ let first = document.getElementById('first');
 console.log(first.innerHTML); //will return the html inside the element as a string
 console.log(first.outerHTML); // will return the html inside the element along with the element tags itself as a string
 
-first.innerHTML = "<i>this is italic</i>"; //will update the inner html of the element
-console.log(first.innerHTML);
+// first.innerHTML = "<i>this is italic</i>"; //will update the inner html of the element
+// console.log(first.innerHTML);
 
 first.outerHTML = "<div>this is updated outer html</div>"; // htis line will change the outer html of the element as well as inner html
 console.log(first.outerHTML);

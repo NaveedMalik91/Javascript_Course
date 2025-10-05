@@ -1,7 +1,14 @@
 //Get elements by class name
+//DOM navigation like firstchild, nextchild, firstelementchild
+//are useful when elements are close to each other
+//but whne the document is very large and elements need to searched for manipulation
+//in that case we have to peroform DOM searching
+
+//Get elements by class name
 let ctitle = document.getElementsByClassName("card-title") //returns all the elements having class name card-title
 let ctitle1 = document.getElementsByClassName("card-title")[0] //returns first element from all the elements having class name card-title
-ctitle1.style.color = "red";
+//it will not return elements inside the card title class
+ctitle1.style.color = "yellow";
 
 //Get element by ID
 let first_title = document.getElementById("first-card") //Will make title of first card blue identified by ID name
@@ -24,4 +31,8 @@ console.log(document.getElementsByTagName("a")) //will return all the anchor tag
 
 //get elements by name: it uses name attribute that we use ex in input tag
 console.log(document.getElementsByName("search")) //will return the search-bar element identified by name attribute
+
+
+//we can search inside elements further also
+document.head.getElementsByTagName("title")[0].innerText = "Practice";
 

@@ -17,7 +17,7 @@ let promise1 = new Promise((resolve, reject) => {
     if (a == 2) {
         resolve('Success');
     } else {
-        reject('Failed');
+        reject(new Error('Failed'));
     }
 
 });
